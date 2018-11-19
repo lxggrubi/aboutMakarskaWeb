@@ -1,0 +1,291 @@
+/*
+Copyright 2017 Leon Grubisic <lxg6892@g.rit.edu>.
+*/
+
+/*
+    Created on : Oct 11, 2017, 01:44:56 AM
+    Author     : Leon Grubisic <lxg6892@g.rit.edu>
+*/
+
+/*----------------------------------------------------------------------------*
+ * TABLE OF CONTENTS
+ *  - Basic Setup
+ *  - Reusable Components
+ *  - Slide-out Sidebar - Pure CSS
+ *  - Main Content: Index
+ *  - Main Content: About
+ *  - Main Content: References
+ *----------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------*
+ * COLORS
+ * Sidebar:         rgba(204, 229, 255, 0.8)
+ * Menu Items:      #000000
+ *----------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------*
+ * BASIC SETUP
+ *----------------------------------------------------------------------------*/
+
+body {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*----------------------------------------------------------------------------*
+ * REUSABLE COMPONENTS
+ *----------------------------------------------------------------------------*/
+
+section {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-align: left;
+  font-family: arial;
+  font-size: 1.300em;
+  color: #262938;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.563em;
+}
+
+h1 {
+  font-size: 2.813em;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 0.938em;
+}
+
+i {
+  margin-right: 0.625em;
+}
+
+.content img {
+  width: 40%;
+  height: auto;
+}
+
+.content #bigimg {
+  width: 30%;
+  height: auto;
+}
+
+table {
+  padding-left: 10rem;
+}
+
+#breadcrumbs {
+  margin-top: 140px;
+  margin-left: 900px;
+}
+
+/*----------------------------------------------------------------------------*
+ * SLIDE-OUT SIDEBAR - PURE CSS
+ *----------------------------------------------------------------------------*/
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.toggle {
+  text-decoration: none;
+  font-size: 2em;
+  color: #fff;
+  -webkit-transition: all 0.15s ease-out 0;
+  -moz-transition: all 0.15s ease-out 0;
+  transition: all 0.45s ease-out 0;
+  position: fixed;
+  top: 0.450em;
+  left: 0.900em;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.sidebar {
+  z-index: 1;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: -11.875em;
+  -webkit-transition: all 0.15s ease-out 0;
+  -moz-transition: all 0.15s ease-out 0;
+  transition: all 0.15s ease-out 0;
+  width: 12rem;
+  padding: 0.5em;
+  background: rgba(204, 229, 255, 0.8);
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar li a {
+  color: #000;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 1.2em;
+  margin: 0;
+  margin-bottom: 1.000em;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 200%;
+}
+
+.sidebar a:hover {
+  color: red;
+}
+
+#slide:checked+.container .sidebar {
+  left: 0;
+}
+
+#slide:checked+.container .toggle {
+  left: 6.500em;
+}
+
+#slide {
+  display: none;
+}
+
+.jjlink {
+  font-weight: bolder;
+  background-color: rgba(179, 217, 255, 0.5);
+  padding: 0.063em;
+}
+
+/*----------------------------------------------------------------------------*
+ * MAIN CONTENT
+ *----------------------------------------------------------------------------*/
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/makarska.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#welcome
+{
+  font-size: 6.000em;
+}
+
+.content h1 {
+  color: white;
+}
+
+.content p {
+  color: white;
+}
+
+.main_content h1, p {
+  color: white;
+}
+
+.main_content h1 {
+  padding-top: 2.875em;
+  text-align: center;
+}
+
+.main_content p {
+  text-align: center;
+}
+
+.content {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  text-align: center;
+  padding: 0.313em;
+  /**padding-left: 9.5rem;*/
+}
+
+.content li {
+  list-style-type: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+.content li a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+.content li a:hover {
+  color: red;
+  font-size: 1.400em;
+}
+
+table {
+  color: #fff;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  list-style-type: none;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.500em;
+  padding: 0.313em;
+}
+
+#townsquare
+{
+  font-size: 0.900em;
+}
+
+/*----------------------------------------------------------------------------*
+ * MAIN CONTENT - ABOUT
+ *----------------------------------------------------------------------------*/
+
+.hero_about {
+  position: relative;
+  margin: 0.625em;
+}
+
+/*----------------------------------------------------------------------------*
+ * MAIN CONTENT - REFERENCES
+ *----------------------------------------------------------------------------*/
+
+#ref {
+  font-size: 1.110em;
+}
+
+.refh1 {
+  margin-top: -4.500em;
+}
+
+#reful {
+  float: left;
+  margin-left: 12.500em;
+}
+
+#refulic {
+  float: right;
+  margin-right: 12.500em;
+}
+
+#btop {
+  margin-top: 23.000em;
+  margin-left: 35.000em;
+  background-color: rgba(179, 217, 255, 0.8);
+  padding: 0.105em;
+  width: 12%;
+}

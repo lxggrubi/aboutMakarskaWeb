@@ -1,0 +1,149 @@
+/*----------------------------------------------------------------------------*
+ * Copyright 2017 Leon Grubisic <lxg6892@rit.edu>.
+ *
+ * TABLE OF CONTENTS
+ *  - Big Tablet Up To 1200px
+ *  - Small to Big Tablet: 768px-1023px
+ *  - Small Phones to Small Tablest: 481px-767px
+ *  - Small Phones: 0-480px
+ *----------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------*
+ * Big Tablet Up To 1200px
+ *----------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 1200px) {
+  .smaller {
+    font-size: 0.900em;
+  }
+  #ref {
+    font-size: 1.110em;
+  }
+  .refh1 {
+    margin-top: 0;
+  }
+  #reful {
+    float: none;
+    margin-left: 0;
+  }
+  #refulic {
+    float: none;
+    margin-right: 0;
+  }
+}
+
+/*----------------------------------------------------------------------------*
+ * Small to Big Tablet: 768px-1023px
+ *----------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 1023px) {
+  .smaller {
+    font-size: 0.600em;
+  }
+  #ref {
+    font-size: 1.110em;
+  }
+  .refh1 {
+    margin-top: 0;
+  }
+  #reful {
+    float: none;
+    margin-left: 0;
+  }
+  #refulic {
+    float: none;
+    margin-right: 0;
+  }
+}
+
+/*----------------------------------------------------------------------------*
+ * Small Phones to Small Tablest: 481px-767px
+ *----------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 767px) {
+  .smaller {
+    font-size: 0.600em;
+  }
+  #ref {
+    font-size: 1.110em;
+  }
+  .refh1 {
+    margin-top: 0;
+  }
+  #reful {
+    float: none;
+    margin-left: 0;
+  }
+  #refulic {
+    float: none;
+    margin-right: 0;
+  }
+}
+
+/*----------------------------------------------------------------------------*
+ * Small Phones: 0-480px
+ *----------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 480px) {
+  .smaller {
+    font-size: 0.600em;
+  }
+  #ref {
+    font-size: 1.110em;
+  }
+  .refh1 {
+    margin-top: 0;
+  }
+  #reful {
+    float: none;
+    margin-left: 0;
+  }
+  #refulic {
+    float: none;
+    margin-right: 0;
+  }
+
+  body {
+    background-color: black;
+  }
+
+  #land {
+    margin-bottom: 220px;
+  }
+
+  #about {
+    margin-bottom: 250px;
+    font-size: 0.700em;
+  }
+
+  #history {
+    margin-bottom: 250px;
+    font-size: 0.600em;
+  }
+
+  #malacological {
+    font-size: 0.800em;
+  }
+
+  #townsquare {
+    margin-bottom: 50px;
+    font-size: 0.600em;
+  }
+
+  #svmarko {
+    font-size: 0.600em;
+  }
+
+  #fishcrabs {
+    font-size: 0.600em;
+  }
+
+  #rubric {
+    margin-bottom: 80px;
+    font-size: 1.000em;
+  }
+
+  #references {
+    font-size: 0.600em;
+  }
+}
